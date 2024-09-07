@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "AvenirLTStd-Black";
+  src: url("./assets/font/AvenirLTStd-Black.woff") format("woff"),
+    url("./assets/font/AvenirLTStd-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "AvenirLTStd-Book";
+  src: url("./assets/font/AvenirLTStd-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "AvenirLTStd-Book", sans-serif !important;
+}
+
+label {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
+
+/* Header CSS */
+.header {
+  min-height: 78px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.header-img {
+  min-width: 306px;
+  max-width: 306px;
+}
+
+/* Login Page CSS */
+.form-card {
+  border-radius: 0 !important;
+}
+
+.form-login {
+  border-radius: 0 !important;
+  background-color: #1890ff;
+}
+.login-content {
+  height: 100%;
+  background-color: #f4eeee;
+}
+.login-card {
+  border-radius: 2px;
+  width: 30%;
+}
+
+.logout-button {
+  background-color: #4f46f8;
+  border-radius: 2px;
+  font-size: 1rem;
+  padding: 1.2rem 1.5rem;
+}
+
+/* Table CSS */
+th.ant-table-cell {
+  background-color: #f4f4f9 !important;
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+.ant-table-content {
+  border: 1px solid #cbd6e2;
+  border-radius: 8px;
+  overflow: auto;
+}
+.call-container {
+  margin-left: 43px;
+  margin-right: 43px;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+.ant-table-container {
+  margin-bottom: 6rem;
+}
+
+.calls-title {
+  margin-bottom: 2.5rem;
+}
+
+.ant-select-selector {
+  border: none !important;
+}
+.ant-select-selection-item {
+  font-size: 16px !important;
+  color: #5148f7;
+}
+.ant-select:focus-visible {
+  border: none !important;
+}
+.ant-select-item-option-active {
+  background-color: #d8d6fd !important;
+}
+
+.archived-tag {
+  background-color: #edfbfa;
+  color: #1ec9b7;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  padding: 0.2rem 0.5rem;
+  font-size: 14px !important;
+}
+
+.default-tag {
+  background-color: #eeeeee;
+  color: #747474;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 14px !important;
+  padding: 0.2rem 0.5rem;
+}
+.ant-table-cell {
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "AvenirLTStd-Book", sans-serif !important;
+}
+.ant-pagination-item-active {
+  background-color: #4f46f8 !important;
+  border: none !important;
+  border-radius: 2px !important;
+  color: white;
+}
+
+.ant-select-dropdown {
+  width: 160px !important;
+}
+.call-button {
+  border-radius: 2px;
+  background-color: #4f46f8;
+  font-weight: 500;
+}
+
+/* Modal CSS */
+
+.modal-row {
+  display: flex;
+  justify-content: flex-start;
+}
+.ant-modal-body {
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.ant-form-item {
+  margin-bottom: 12px;
+}
+.ant-modal-content {
+  border-radius: 3px !important;
+}
+.modal-data {
+  font-weight: 700;
+  width: 100px;
+}
+
+.modal-save-btn {
+  background-color: #4f46f8;
+  font-weight: 600;
+}
