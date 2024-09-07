@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./layouts/Layout";
 import Login from "./pages/Login";
-import PrivateRoute from "./components/PrivateRoute";
+import PrivateRoute from "./routes/PrivateRoute";
 import Call from "./pages/Call";
-import TokenRefresher from "./components/TokenRefresher";
-import RedirectRoute from "./components/RedirectRoute";
+import TokenRefresher from "./auth/TokenRefresher";
+import RedirectRoute from "./routes/RedirectRoute";
 const App = () => {
   return (
     <Router>
