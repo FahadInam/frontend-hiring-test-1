@@ -79,7 +79,6 @@ const Call = () => {
   // Handle status click to update status
   const handleStatusClick = useCallback(async (record) => {
     const response = await updateCallStatus(record.key);
-    if (response) toast.success("Status Update Triggered!");
   }, []);
 
   // Handle filter changes
