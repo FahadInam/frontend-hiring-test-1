@@ -1,5 +1,5 @@
 import { API_BASE_URL, apis } from "../constants/api.constants";
-import { getAuthToken } from "../actions/user.actions";
+import { getAuthToken, logoutUser } from "../actions/user.actions";
 import { toast } from "react-toastify";
 
 const apiHandler = async (apiName, payload = {}, headers = {}) => {
@@ -46,6 +46,10 @@ const apiHandler = async (apiName, payload = {}, headers = {}) => {
     const data = await response.json();
 
     if (!response.ok) {
+      if (response.status === 401) {
+        logoutUser();
+        throw new Error("Unauthorized. You have been logged out.");
+      }
       throw new Error(data.message || "API request failed");
     }
 
