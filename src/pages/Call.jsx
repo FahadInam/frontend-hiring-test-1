@@ -51,7 +51,6 @@ const Call = () => {
           : call
       )
     );
-    toast.success("Status Updated!");
   }, []);
 
   // Setup Pusher
@@ -79,6 +78,9 @@ const Call = () => {
   // Handle status click to update status
   const handleStatusClick = useCallback(async (record) => {
     const response = await updateCallStatus(record.key);
+    if (response) {
+      toast.success("Status Updated!");
+    }
   }, []);
 
   // Handle filter changes
